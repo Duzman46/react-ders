@@ -1,12 +1,11 @@
 import ExpenseForm from "./ExpenseForm";
-import "./NewExpense.css"
-
-const NewExpense = () => {
+import "./NewExpense.css";
+const NewExpense = ({ onAddExpense }) => {
     return (
-        <div>
-            <ExpenseForm />
+        <div className="new-expense">
+            <ExpenseForm onAddExpense={onAddExpense}></ExpenseForm>
         </div>
-    )
-}
+    );
+};
 
 export default NewExpense;
